@@ -3,7 +3,8 @@
    <head>
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="icons/links/1/css/all.css">
-      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="animate/animate.min.css"/>
+      <link rel="stylesheet" href="animate/animate.css">
       <title> MAHMOUD1 </title>
       <style>
          body{
@@ -383,7 +384,7 @@
          <marquee class="m1" direction="right" behavior="scroll" scrollamount="5">
             <img src="photo/118.gif" class="img3">
          </marquee>
-         <button onclick="show()" class="b1" id="b1">
+         <button onclick="show()" class="b1 wow bounceInUp" id="b1">
          <i class="fas fa-align-justify"> </i>
          </button>
       </nav>
@@ -628,6 +629,9 @@
       <nav class="n3">
          <h1>Powered by <a href="#"> <b> MAHMOUD ELBOUSHY </b>  </a> </h1>
       </nav>
+      <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/wow.min.js"></script>
       <script>
          function show(){
          document.getElementById("d2").style.display="block";
@@ -768,10 +772,9 @@
          
           document.getElementById("d17").style.display="none";
          }
-         
+         new WOW().init();
          
       </script>
-      <script src="js/jquery-3.5.1.slim.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>																
+      
    </body>
 </html>
